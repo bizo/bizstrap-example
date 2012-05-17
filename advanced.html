@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid header">
+        <img id="logo" src="http://www.bizo.com/images/logo_tag.png" height="50"/>
+      </div>
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well">
+            <ul class="nav nav-list">
+              <li class="nav-header">Audience Analysis</li>
+              <li class="active">
+              <a href="#">
+                <i class="icon-signal"></i>
+                Insight 
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+                Trends 
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+                Biz Index 
+              </a>
+              </li>
+
+              <li class="nav-header">Action Tracking</li>
+              <li>
+              <a href="#">
+                <i class="icon-pencil"></i>
+                Manage Actions
+              </a>
+              <a href="#">
+                <i class="icon-pencil"></i>
+                Manage Segments
+              </a>
+              </li>
+
+              <li class="nav-header">Campaigns</li>
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+               Performance 
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+                Audience Impact 
+              </a>
+              </li>
+
+
+              <li class="nav-header">Publishers</li>
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+                Inventory Report 
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+                Data Provider Report 
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-pencil"></i>
+                Publisher Sites 
+              </a>
+              </li>
+
+              <li class="nav-header">Retargeting</li>
+              <li>
+              <a href="#">
+                <i class="icon-wrench"></i>
+                Admin 
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-pencil"></i>
+                Manage
+              </a>
+              </li>
+
+              <li>
+              <a href="#">
+                <i class="icon-signal"></i>
+               Performance 
+              </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span10 content">
+          <!--Body content-->
+          <h1>Example Application Report</h1>
+          <hr />
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              <a class="btn" href="#">Domains</a>
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">bizo.com</a></li>
+                <li><a href="#">media.bizo.com</a></li>
+                <li><a href="#">switchboard.bizo.com</a></li>
+                <li><a href="#">code.bizo.com</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                Metrics 
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Clicks</a></li>
+                <li><a href="#">Conversions</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group">
+              <button class="btn btn-info">submit</button>
+              <button class="btn btn">export</button>
+            </div>
+          </div>
+
+
+          <div class="row-fluid">
+            <div id='chart1' class='hero-unit' style='width: 900px; height: 300px;'></div>
+          </div>
+
+         <div class="row-fluid">
+           <div class="span12">
+             <h2>Key Metrics</h2>
+             <hr />
+           </div>
+
+           <div class="span4" style="margin-left:0;">
+             <h3>CTR <small>30%</small></h3>
+             <div class="progress progress-info">
+               <div class="bar"
+                 style="width: 30%;"></div>
+             </div>
+           </div>
+
+           <div class="span4">
+             <h3>Conversion Rate <small>6%</small></h3>
+             <div class="progress progress-success">
+               <div class="bar"
+                 style="width: 6%;"></div>
+             </div>
+           </div>
+
+            <div class="span4">
+              <h3>Fill Rate <small>60%</small></h3>
+             <div class="progress progress-warning">
+               <div class="bar"
+                 style="width: 60%;"></div>
+             </div>
+           </div>
+         </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-alert.js"></script>
+  <script src="js/bootstrap-modal.js"></script>
+  <script src="js/bootstrap-dropdown.js"></script>
+  <script src="js/bootstrap-scrollspy.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
+  <script src="js/bootstrap-button.js"></script>
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-carousel.js"></script>
+  <script src="js/bootstrap-typeahead.js"></script>
+  <script src="js/application.js"></script>
+
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js"></script>
+  <script src="https://raw.github.com/jcarver989/raphy-charts/master/compiled/charts.min.js"></script>
+  <script type="text/javascript">
+
+
+  function create_date(day) {
+    var d;
+    d = new Date();
+    return new Date(d.getFullYear(), d.getMonth(), day + 1);
+  };
+
+  function create_exponential_points() {
+    var i, _results;
+    _results = [];
+    for (i = 0; i <= 25; i++) {
+      _results.push([create_date(i), i * 4.]);
+    }
+    return _results;
+  };
+
+  function create_squared_points() {
+    var i, _results;
+    _results = [];
+    for (i = 0; i <= 25; i++) {
+      _results.push([create_date(i), i * (i - 1)]);
+    }
+    return _results;
+  };
+
+  var chart = new Charts.LineChart('chart1', {
+    show_grid: false,
+    label_max: false,
+    label_min: false
+  });
+
+  chart.add_line({
+    data: create_exponential_points(),
+    options: {
+      line_color: "#55bb00",
+      area_color: "#55bb00",
+      dot_color: "#55bb00"
+    }
+  });
+
+  chart.add_line({
+    data: create_squared_points()
+  });
+
+  chart.draw();
+  </script>
+    
+
+  </body>
+</html>
